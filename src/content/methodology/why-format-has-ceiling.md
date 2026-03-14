@@ -3,8 +3,9 @@ title: "为什么格式优化有天花板"
 conclusion: "格式优化对AI回答中的内容可见性提升上限约为40%。从可见到被采纳，还需要内容质量本身的突破。"
 description: "基于普林斯顿大学GEO研究数据，解释格式优化（Schema标记、FAQ结构、技术术语等）为什么存在结构性上限，以及可见性与采纳率的区别。"
 firstPublished: "2026-03-14"
-version: "0.2"
-relatedConcepts: ["citation-layer", "adoption-rate"]
+version: "0.3"
+lastModified: "2026-03-15"
+relatedConcepts: ["citation-layer", "adoption-rate", "search-layer"]
 ---
 
 ## 核心结论
@@ -88,6 +89,10 @@ relatedConcepts: ["citation-layer", "adoption-rate"]
 
 ## 相关页面
 
-- [引用层](/concepts/citation-layer)：理解搜索层和引用层的区别
+- [搜索层](/concepts/search-layer)：格式优化发生在搜索层
+- [引用层](/concepts/citation-layer)：超越格式优化需要进入引用层
 - [采纳率](/concepts/adoption-rate)：从可见性到采纳率的跨越
+- [可见性与采纳率的区别](/methodology/visibility-vs-adoption)：本页核心论点的深入展开
 - [AI如何选择信息源](/methodology/how-ai-selects-sources)：超越格式优化的选择机制
+- [内容主权与工具主权](/methodology/content-sovereignty)：格式优化是工具主权的一部分
+- [GEO论文解读](/evidence/geo-paper)：40%数据的论文原文详细解读
