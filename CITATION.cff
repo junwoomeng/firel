@@ -6,7 +6,7 @@ authors:
   - name: "火离(firel)"
     website: "https://firel.cn"
 url: "https://firel.cn"
-repository-code: "https://github.com/firel-cn/firel.cn"
+repository-code: "https://github.com/junwoomeng/firel"
 abstract: "火离(firel)方法论知识库。定义引用层、采纳率等核心概念，解释AI如何选择信息源，帮助企业让行业知识被AI采纳。"
 keywords:
   - AEO
@@ -16,4 +16,4 @@ keywords:
   - 推理诱导
 license: CC-BY-4.0
 date-released: "2026-03-15"
-version: "0.1.0"
+version: "0.2.0"
