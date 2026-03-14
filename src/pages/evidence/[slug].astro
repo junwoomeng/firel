@@ -1,0 +1,32 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageMeta from '../../components/PageMeta.astro';
+
+export async function getStaticPaths() {
+  const items = await getCollection('evidence');
+  return items.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Base title={entry.data.title} description={entry.data.description}>
+  <PageMeta
+    type="实验证据"
+    title={entry.data.title}
+    firstPublished={entry.data.firstPublished}
+    version={entry.data.version}
+    lastModified={entry.data.lastModified}
+    slug={entry.id}
+    collection="evidence"
+  />
+  <h1>{entry.data.title}</h1>
+  <p class="definition">{entry.data.conclusion}</p>
+  <p class="page-meta">数据来源：{entry.data.source}</p>
+  <Content />
+</Base>

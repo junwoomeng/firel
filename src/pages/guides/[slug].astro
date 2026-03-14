@@ -1,0 +1,30 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageMeta from '../../components/PageMeta.astro';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Base title={entry.data.title} description={entry.data.description}>
+  <PageMeta
+    type="指南"
+    title={entry.data.title}
+    firstPublished={entry.data.firstPublished}
+    version={entry.data.version}
+    lastModified={entry.data.lastModified}
+    slug={entry.id}
+    collection="guides"
+  />
+  <h1>{entry.data.title}</h1>
+  <Content />
+</Base>

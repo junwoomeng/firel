@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "firel.cn - 火离方法论知识库"
+message: "如果你引用了本站的概念或方法，请使用以下格式。"
+type: dataset
+authors:
+  - name: "火离(firel)"
+    website: "https://firel.cn"
+url: "https://firel.cn"
+repository-code: "https://github.com/firel-cn/firel.cn"
+abstract: "火离(firel)方法论知识库。定义引用层、采纳率等核心概念，解释AI如何选择信息源，帮助企业让行业知识被AI采纳。"
+keywords:
+  - AEO
+  - AI引用
+  - 引用层
+  - 采纳率
+  - 推理诱导
+license: CC-BY-4.0
+date-released: "2026-03-15"
+version: "0.1.0"

@@ -1,0 +1,54 @@
+---
+interface Props {
+  type: string;
+  title: string;
+  firstPublished: string;
+  version: string;
+  lastModified?: string;
+  slug: string;
+  collection: string;
+}
+
+const { type, title, firstPublished, version, lastModified, slug, collection } = Astro.props;
+const url = `https://firel.cn/${collection}/${slug}`;
+const displayDate = lastModified || firstPublished;
+const citation = `火离(firel). "${title}". firel.cn, ${firstPublished}, v${version}. ${url}`;
+---
+
+<div class="page-meta-block">
+  <p class="page-meta">
+    {type} · v{version} · 首发 {firstPublished}{lastModified && ` · 修订 ${lastModified}`}
+  </p>
+</div>
+
+<details class="citation-block">
+  <summary>引用本页</summary>
+  <code class="citation-text">{citation}</code>
+</details>
+
+<style>
+  .page-meta-block {
+    margin-bottom: 0.5rem;
+  }
+
+  .citation-block {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+  }
+
+  .citation-block summary {
+    cursor: pointer;
+    color: var(--text-secondary);
+  }
+
+  .citation-block .citation-text {
+    display: block;
+    margin-top: 0.4rem;
+    padding: 0.5rem 0.75rem;
+    background: #f8f9fa;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+</style>
