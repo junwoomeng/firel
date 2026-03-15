@@ -1,5 +1,7 @@
 # firel.cn
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19027371.svg)](https://doi.org/10.5281/zenodo.19027371)
+
 firel.cn 的方法论知识库与定义源仓库。
 
 ## 这是什么
@@ -51,7 +53,7 @@ npm run preview    # 本地预览生产构建
 
 ## 引用
 
-如果你引用了本站的概念或方法，请参考 [CITATION.cff](CITATION.cff) 中的格式。
+如果你引用了本站的概念或方法，请参考 [CITATION.cff](CITATION.cff) 中的格式。核心理论文档的 DOI: [10.5281/zenodo.19027371](https://doi.org/10.5281/zenodo.19027371)
 
 ## 许可
 
